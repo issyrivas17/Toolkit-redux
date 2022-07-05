@@ -14,5 +14,5 @@
         "react"
     ],
     "rules": {
-        "react/no-set-state": "off" 
+        
     }}
