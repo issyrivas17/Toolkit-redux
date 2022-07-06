@@ -6,7 +6,7 @@ import logo from './logo.svg'
 import './App.css'
 
 
-import {increment} from './store/slice/counter'
+import {decrement, increment} from './store/slice/counter'
 
 function App() {
   const {counter} = useSelector (state => state.counter) 
@@ -26,7 +26,7 @@ function App() {
             IncrementBy
           </button> 
 
-          <button type="button" onClick={ () => dispacth (increment () ) }>
+          <button type="button" onClick={ () => dispacth (decrement () ) }>
             Decrement 
           </button> 
         
