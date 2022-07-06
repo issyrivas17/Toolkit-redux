@@ -16,10 +16,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p>count is: {counter} </p>
         
           <button type="button" onClick={ () => dispacth (increment () ) }>
-            count is: {counter} 
+            Increment 
           </button>
         
         
