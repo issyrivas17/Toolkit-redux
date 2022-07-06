@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+
 import logo from './logo.svg'
 import './App.css'
+import { useSelector, useDispatch} from 'react-redux'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const {counter} = useSelector (state => state.counter) 
+  const dispacth = useDispatch (); 
+
 
   return (
     <div className="App">
@@ -12,7 +15,7 @@ function App() {
         <p>Hello Vite + React!</p>
         
           <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
+            count is: {counter} 
           </button>
           <h2>Hello my name es chiki chiki chiki chiki </h2>
         
