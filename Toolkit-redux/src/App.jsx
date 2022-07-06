@@ -1,7 +1,9 @@
 
 import logo from './logo.svg'
 import './App.css'
-import { useSelector, useDispatch} from 'react-redux'
+import { useSelector, useDispatch} from 'react-redux' 
+
+import {increment} from './store/slice/counter'
 
 function App() {
   const {counter} = useSelector (state => state.counter) 
@@ -14,7 +16,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
+          <button type="button" onClick={() => dispacth (increment) () }>
             count is: {counter} 
           </button>
           <h2>Hello my name es chiki chiki chiki chiki </h2>
