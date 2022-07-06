@@ -17,7 +17,8 @@ export const counterSlice = createSlice({
       state.counter -=1; 
     },
    
-    incrementByAmount: (state,action) => {
+    incrementBy: (state,action) => { 
+      console.log (action); 
       state.counter += action.payload  
     }
   },
@@ -27,6 +28,6 @@ export const counterSlice = createSlice({
 export const {
   increment,
   decrement,
-  incrementByAmount
+  incrementBy
 } = counterSlice.actions
 
