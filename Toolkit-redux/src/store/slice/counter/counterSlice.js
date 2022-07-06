@@ -26,4 +26,3 @@ export const {
   increment,
 } = counterSlice.actions
 
-export default counterSlice.reducer
