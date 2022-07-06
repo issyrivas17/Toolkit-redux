@@ -22,7 +22,7 @@ function App() {
             Increment 
           </button> 
 
-          <button type="button" onClick={ () => dispacth (incrementByAmount () ) }>
+          <button type="button" onClick={ () => dispacth (incrementBy (2) ) }>
             IncrementBy
           </button> 
 
