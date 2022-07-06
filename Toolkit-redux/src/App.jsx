@@ -1,7 +1,10 @@
+/* eslint-disable */
+
+import { useSelector, useDispatch} from 'react-redux' 
 
 import logo from './logo.svg'
 import './App.css'
-import { useSelector, useDispatch} from 'react-redux' 
+
 
 import {increment} from './store/slice/counter'
 
@@ -15,7 +18,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         
-          <button type="button" onClick={ () => dispacth (increment) () }>
+          <button type="button" onClick={ () => dispacth (increment) }>
             count is: {counter} 
           </button>
         
