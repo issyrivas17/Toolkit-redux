@@ -2,10 +2,6 @@ import {
   createSlice
 } from '@reduxjs/toolkit'
 
-const initialState = {
-  counter: 10, 
-}
-
 export const counterSlice = createSlice({
   name: 'counter',
   initialState: {
