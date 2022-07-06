@@ -9,17 +9,16 @@ function App() {
   const {counter} = useSelector (state => state.counter) 
   const dispacth = useDispatch (); 
 
-
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         
-          <button type="button" onClick={() => dispacth (increment) () }>
+          <button type="button" onClick={ () => dispacth (increment) () }>
             count is: {counter} 
           </button>
-          <h2>Hello my name es chiki chiki chiki chiki </h2>
+        
         
       </header>
     </div>
