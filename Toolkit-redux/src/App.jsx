@@ -20,7 +20,15 @@ function App() {
         
           <button type="button" onClick={ () => dispacth (increment () ) }>
             Increment 
-          </button>
+          </button> 
+
+          <button type="button" onClick={ () => dispacth (increment () ) }>
+            IncrementBy
+          </button> 
+
+          <button type="button" onClick={ () => dispacth (increment () ) }>
+            Decrement 
+          </button> 
         
         
       </header>
