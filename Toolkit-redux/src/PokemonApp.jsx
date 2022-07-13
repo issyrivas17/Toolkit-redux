@@ -1,6 +1,18 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { getPokemons } from './store/slice/pokemon';
 
-export const PokemonApp = () => {
+export const PokemonApp = () => { 
+
+  const dispatch = useDispatch (); 
+
+  useEffect(() => {
+    dispatch (getPokemons ()); 
+  }, []);
+
+
+
+
   return (
         <>
         <h1> PokemonApp</h1> 
