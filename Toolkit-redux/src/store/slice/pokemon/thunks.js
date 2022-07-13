@@ -1,9 +1,14 @@
-import { starLoandingPokemons } from "./pokemonSlice"
+/* eslint-disable */ 
+import { setPokemons, starLoandingPokemons } from "./pokemonSlice"
 
 export const getPokemons = (page =0 ) => {
     return (dispatch,getState) => {
         dispatch (starLoandingPokemons () ); 
         //TODO: Realizar Peticion http
-        //dispacth (setPokemons()); 
+
+        const resp = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=12&offset=${page*10}`); 
+        const data = await resp.json (); 
+
+        dispatch (setPokemons ({pokemons:data.results,page : page +1 })) 
     }
 }
