@@ -2,11 +2,11 @@
 import { setPokemons, starLoandingPokemons } from "./pokemonSlice"
 
 export const getPokemons = (page =0 ) => {
-    return (dispatch,getState) => {
+    return async (dispatch,getState) => {
         dispatch (starLoandingPokemons () ); 
         //TODO: Realizar Peticion http
 
-        const resp = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${page * 10 }`); 
+     const resp = await fetch (`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${page * 10 }`)
         const data = await resp.json (); 
         console.log(data); 
 
