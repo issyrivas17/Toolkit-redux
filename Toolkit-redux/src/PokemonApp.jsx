@@ -6,7 +6,7 @@ export const PokemonApp = () => {
 
   const dispatch = useDispatch (); 
 
-  const {isLoading,pokemons = [],page } = useSelector (state => state.pokemons) ; 
+  const{ isLoading,pokemons = [], page } = useSelector (state => state.pokemons) ; 
 
   useEffect(() => {
     dispatch (getPokemons ()); 
@@ -30,10 +30,9 @@ export const PokemonApp = () => {
         
         <button
         disabled = {isLoading} 
-        onClick ={() => dispatch (getPokemons (page) )}
-        
+        onClick ={() => dispatch (getPokemons(page) )}
         >
-
+        Siguiente. 
         </button>
 
 
