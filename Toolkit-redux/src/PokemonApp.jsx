@@ -24,13 +24,13 @@ export const PokemonApp = () => {
             <li> Hola </li>
         </ul>
         
-        <butto
+        <button
         disabled = {isLoading} 
         onClick ={() => dispatch (getPokemons (page) )}
         
         >
 
-        </butto>
+        </button>
 
 
         </>
