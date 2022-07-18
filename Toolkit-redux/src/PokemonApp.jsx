@@ -23,6 +23,16 @@ export const PokemonApp = () => {
             <li> Hola </li>
             <li> Hola </li>
         </ul>
+        
+        <butto
+        disabled = {isLoading} 
+        onClick ={() => dispatch (getPokemons (page) )}
+        
+        >
+
+        </butto>
+
+
         </>
   )
 }
