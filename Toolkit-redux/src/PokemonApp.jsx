@@ -15,7 +15,8 @@ export const PokemonApp = () => {
  return (
         <>
         <h1> PokemonApp</h1> 
-        <hr/>
+        <hr/> 
+        <span> Loading: {isLoading ? 'true': 'false'}</span> 
 
         <ul>
             <li> Hola </li>
