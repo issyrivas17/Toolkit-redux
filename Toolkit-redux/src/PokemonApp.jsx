@@ -6,7 +6,7 @@ export const PokemonApp = () => {
 
   const dispatch = useDispatch (); 
 
-  const {isLoading,pokemons,page} = useSelector (state => state.pokemons) ; 
+  const {isLoading,pokemons = [],page } = useSelector (state => state.pokemons) ; 
 
   useEffect(() => {
     dispatch (getPokemons ()); 
@@ -22,7 +22,7 @@ export const PokemonApp = () => {
           {
 
             pokemons.map( ({name}) => (  
-              <li key = {name} >{name}</li> 
+              <li key = {name}> {name}  </li> 
 
             ))
           }
