@@ -19,9 +19,13 @@ export const PokemonApp = () => {
         <span> Loading: {isLoading ? 'true': 'false'}</span> 
 
         <ul>
-            <li> Hola </li>
-            <li> Hola </li>
-            <li> Hola </li>
+          {
+
+            pokemons.map( ({name}) => (  
+              <li key = {name} >{name}</li> 
+
+            ))
+          }
         </ul>
         
         <button
