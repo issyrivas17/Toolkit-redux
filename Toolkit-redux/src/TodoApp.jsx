@@ -3,18 +3,27 @@ import { useGetTodosQuery } from './store/apis/todosApi';
 
 export const TodoApp = () => {
 
- const algo = useGetTodosQuery(); 
+ const {data: todos,isLoading} = useGetTodosQuery(); 
 
   return (
     <> 
     
-    <h1> TodoApp </h1> 
+    <h1> Todos- RTK Query  </h1> 
     <hr/> 
-    <h4> isLoading...</h4> 
-    <h4> isFetching...</h4>
+    <h4> isLoading... {isLoading ? 'True': 'False' }</h4>  
+    
     <hr/> 
     
     <pre> ... </pre> 
+    <ul>
+      {todos.map (todo => (
+        <li key={ todo.id}> 
+        {todo.title}
+        
+        </li>
+  
+      ))}
+    </ul>
 
     <button>
         Next todo 
