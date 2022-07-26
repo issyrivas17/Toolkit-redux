@@ -7,7 +7,11 @@ export const todosApi = createApi({
 
     baseQuery: fetchBaseQuery ({
         baseUrl: 'https://jsonplaceholder.typecode.com' 
-    })
+    }), 
+
+    endpoints: (builder) => {
+        
+    }
 
 
 
