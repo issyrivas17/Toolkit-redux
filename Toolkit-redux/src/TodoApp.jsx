@@ -1,6 +1,10 @@
 import React from 'react'
+import { useGetTodosQuery } from './store/apis/todosApi';
 
 export const TodoApp = () => {
+
+ const algo = useGetTodosQuery(); 
+
   return (
     <> 
     
