@@ -6,7 +6,7 @@ export const todosApi = createApi({
     reducerPath: 'todos', 
 
     baseQuery: fetchBaseQuery ({
-        baseUrl: 'https://jsonplaceholder.typecode.com' 
+        baseUrl: 'https://jsonplaceholder.typicode.com' 
     }), 
 
     endpoints: (builder) => { 
