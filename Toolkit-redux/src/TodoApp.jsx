@@ -5,6 +5,7 @@ export const TodoApp = () => {
     <> 
     
     <h1> TodoApp </h1> 
+    <hr/> 
     <h4> isLoading...</h4> 
     <h4> isFetching...</h4>
     <hr/> 
